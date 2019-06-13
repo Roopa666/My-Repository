@@ -25,7 +25,7 @@ COMBINED = 'data/combined.csv'
 IMAGES_FOLDER = 'images/'
 
 
-'TRAIN = True  
+TRAIN = True  
 MIN_YEAR = 2009  
 MAX_YEAR = 2011  
 TEST_SPLIT = 2011 
@@ -286,21 +286,3 @@ print '============================================'
 
 
 
-def feat_imp(X):
-    feat_imp = feature_importance(X.columns.tolist(), reg_ada.feature_importances_)
-
-
-
-
-def TRAIN(data,pickles):
-    if TRAIN == True:
-        with open('data/pickles/reg_ada_' + STATE + '_xtr.pkl', 'wb') as f:
-            pickle.dump(reg_ada, f)
-
-
-
-def sfl(res):
-    res = sfl
-    res['y_pred'] = y_ada
-    
-    df_plt = resdf_plt['y_true'] = y
